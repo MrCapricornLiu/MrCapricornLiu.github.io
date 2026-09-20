@@ -103,6 +103,34 @@
     color: inherit;
     font-weight: normal;
   }
+  .beyond-table .text-col {
+    padding: 4px 10px 4px 0;
+    vertical-align: top;
+  }
+  .beyond-table ul {
+    margin: 0;
+    padding-left: 1em;
+    list-style-type: disc;
+    list-style-position: outside;
+  }
+  .beyond-table li {
+    margin: 0;
+  }
+  .beyond-table li + li {
+    margin-top: 0.8em;
+  }
+  .beyond-table li p {
+    margin-bottom: 0;
+  }
+  .beyond-table li p + p {
+    margin-top: 0.6em;
+  }
+  .beyond-table tr + tr .text-col {
+    padding-top: 0.8em;
+  }
+  .beyond-table ul + p {
+    margin-top: 0.8em;
+  }
 </style>
 </head>
 <body>
@@ -256,28 +284,49 @@
   </tbody>
 </table>
 
-<h2>Misc</h2>
-<table width="100%">
+<h2>Beyond Research</h2>
+<table class="beyond-table" width="100%">
   <tbody>
     <tr>
       <td class="text-col">
-        <p>
-          I am interested in zero-sum environments, including both markets and games.
-          In my spare time, I engage in trading activities in markets such as cryptocurrencies, U.S. stocks, and prediction markets, as well as games like Texas Hold'em and Mahjong.
-        </p>
-        <p>
-          I enjoy analyzing these competitive settings and trying to gain an edge through strategy and reasoning. It's just for fun — don't gamble.
-          Recently, I have also been exploring how to use LLMs in these trading markets, including factor mining and automated trading systems, etc., to assist trading decisions.
-        </p>
-        <p>
-          I also enjoy video games, including single-player games on platforms such as PlayStation, Nintendo Switch, and Steam, as well as cooperative multiplayer games. My favorite game is <em>The Legend of Zelda: Breath of the Wild</em>—the 100+ hours I spent playing it are among the happiest moments of my life. For multiplayer games, I particularly enjoy <em>League of Legends</em>, which is probably the game I've spent the most time playing.
-        </p>
-        <p>
-          If you happen to share similar interests, feel free to reach out.
-        </p>
+        <ul>
+          <li>
+            <p><b>Non-Negative-Sum Games.</b>
+              I am interested in non-negative-sum environments (i.e., zero-sum and positive-sum games), from financial markets to strategy games.
+              In my spare time, I trade and also enjoy games such as Texas Hold'em and Mahjong.
+            </p>
+            <p>
+              My interests cover almost all tradable assets, including U.S. stocks, Hong Kong stocks, Chinese A-shares, cryptocurrencies, spot markets, futures, derivatives, options, prediction markets, and more.
+              I am a firm believer in Kondratiev waves and agree with the value-investing philosophy of buying when assets are undervalued and selling when valuations are too high.
+              I also recognize the value of data-driven high-frequency technical trading, such as various liquidity strategies and spread arbitrage strategies.
+            </p>
+            <p>
+              I enjoy analyzing these non-negative-sum environments and trying to find an edge through strategy and reasoning to earn real returns.
+              Recently, I have also been exploring LLM applications in trading, including factor mining, automated trading systems, news-driven strategies, and the analysis of public opinion and market sentiment, among others.
+            </p>
+          </li>
+        </ul>
       </td>
       <td class="img-col">
-        <img src="images/misc.png" alt="misc" class="misc-img" />
+        <img src="images/misc.png" alt="Trading, investing, and games" class="misc-img" />
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" class="text-col">
+        <ul>
+          <li>
+            <p><b>Current Aspiration.</b>
+              My medium- to long-term goal is to accumulate capital through earned income and trading profits, then gradually achieve FIRE through compounding.
+              Ultimately, I hope to &ldquo;buy back my time and freedom to do what I truly want to do&rdquo;.
+            </p>
+          </li>
+          <li>
+            <p><b>Video Games.</b>
+              I also enjoy video games, including single-player games on platforms such as PlayStation, Nintendo Switch, and Steam, as well as cooperative multiplayer games. My favorite game is <em>The Legend of Zelda: Breath of the Wild</em>—the hundreds of hours I spent playing it are among the happiest moments of my life. For multiplayer games, I particularly enjoy <em>League of Legends</em>, which is probably the game I've spent the most time playing.
+            </p>
+          </li>
+        </ul>
+        <p>If you happen to share similar interests, feel free to reach out.</p>
       </td>
     </tr>
   </tbody>
