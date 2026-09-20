@@ -13,7 +13,7 @@
     researchContact: "如果你有相近的研究兴趣，欢迎联系交流。",
     recruiting: "<b>我预计于 2027 年 6 月毕业，目前正在寻找 2027 届校招全职机会，欢迎联系。</b>",
     experienceHeading: "研究与实习经历",
-    baiduTeam: "百度 - 基础大模型研发部 - 预训练算法组",
+    baiduTeam: "百度 - 基础模型研发部 - 预训练算法组",
     baiduRole: "算法实习生，2026 年 6 月 - 至今",
     baiduFocus: "方向：文心大模型，预训练架构与算法，训练动力学",
     bytedanceTeam: "字节跳动 - TikTok - 内容理解组",
