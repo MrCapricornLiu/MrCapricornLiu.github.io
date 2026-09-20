@@ -1,6 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="keywords" content="Chenghao Liu, PKU" />
@@ -9,6 +9,7 @@
 <link rel="shortcut icon" href="favicon.ico" />
 <link rel="stylesheet" href="jemdoc.css" type="text/css" />
 <title>Chenghao Liu | Homepage</title>
+<script src="js/language.js" defer="defer"></script>
 <style>
   :root {
     --exp-col-width: 260px;
@@ -131,6 +132,42 @@
   .beyond-table ul + p {
     margin-top: 0.8em;
   }
+  .language-switch {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    vertical-align: top;
+    margin-left: 4px;
+    padding-left: 16px;
+    border-left: 1px solid #ddd;
+  }
+  .language-switch[hidden] {
+    display: none;
+  }
+  .language-switch button {
+    box-sizing: border-box;
+    height: 28px;
+    padding: 0 2px;
+    border: 0;
+    background: transparent;
+    color: #777;
+    font: inherit;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .language-switch button[aria-pressed="true"] {
+    color: #224b8d;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    text-decoration-thickness: 1px;
+  }
+  .language-switch button:hover {
+    color: #224b8d;
+  }
+  .language-switch button:focus-visible {
+    outline: 2px solid #224b8d;
+    outline-offset: 3px;
+  }
 </style>
 </head>
 <body>
@@ -141,18 +178,22 @@
     <tr>
       <td width="670">
         <div id="toptitle">
-          <h1>Chenghao Liu</h1>
+          <h1 data-i18n="name">Chenghao Liu</h1>
         </div>
-        <h3>Master's Student, Peking University</h3>
+        <h3 data-i18n="position">Master's Student, Peking University</h3>
         <p>
-          Email: chliu [at] stu [dot] pku [dot] edu [dot] cn<br />
+          <span data-i18n="email">Email:</span> chliu [at] stu [dot] pku [dot] edu [dot] cn<br />
         </p>
         <p class="social-links">
           <a href="https://scholar.google.com/citations?user=DSWMEjAAAAAJ&hl=zh-CN" aria-label="Google Scholar"><img src="images/icons/google-scholar.png" alt="Google Scholar" /></a>
           <a href="https://github.com/MrCapricornLiu" aria-label="GitHub"><img src="images/icons/github.jpg" alt="GitHub" /></a>
           <a href="images/wechat-qrcode.jpg" aria-label="WeChat"><img src="images/icons/wechat.png" alt="WeChat" /></a>
+          <span class="language-switch" role="group" aria-label="Language / 语言" hidden="hidden">
+            <button type="button" data-language="en" lang="en" aria-pressed="true">English</button>
+            <button type="button" data-language="zh-CN" lang="zh-CN" aria-pressed="false">中文</button>
+          </span>
         </p>
-        <p class="last-updated">Last updated: September 1, 2026</p>
+        <p class="last-updated" data-i18n="updated">Last updated: September 1, 2026</p>
       </td>
       <td style="text-align:center; vertical-align:middle;">
         <img src="images/profile.jpg" border="0" class="profile-img" alt="profile" /><br />
@@ -161,27 +202,27 @@
   </tbody>
 </table>
 
-<h2>Biography</h2>
-<p>
+<h2 data-i18n="biographyHeading">Biography</h2>
+<p data-i18n="biography">
   I am currently pursuing my master's degree at Peking University, advised by
   <a href="https://amr.pku.edu.cn/jzyg/szdw/H/89baf74ac50448f0a475346a58f09739.htm">Prof. Songfang Huang</a>.
   I received my bachelor's degree from Huazhong University of Science and Technology.
 </p>
-<p>
+<p data-i18n="interests">
   My research interests mainly focus on:
   1) <b>Language Model Architecture and Training/Inference Methods</b>: designing model architectures and training/inference techniques for discrete-token language models and continuous diffusion language models to improve task-specific performance or general capabilities;
   2) <b>Agentic Systems</b>: memory, workflow, and data flywheel for LLM-based agents.
 </p>
-<p>
+<p data-i18n="researchContact">
   If you share similar research interests, feel free to reach out.
 </p>
-<p>
+<p data-i18n="recruiting">
   <b>I expect to graduate in June 2027 and am currently seeking full-time opportunities. Please feel free to reach out.</b><br />
   <b>我预计于 2027 年 6 月毕业，目前正在寻找 2027 届校招全职机会，欢迎联系。</b>
 </p>
 
 
-<h2>Experience</h2>
+<h2 data-i18n="experienceHeading">Experience</h2>
 <table id="tbPublications" class="exp-table" width="100%">
   <tbody>
     <tr>
@@ -189,9 +230,9 @@
         <img src="images/industrial/baidu-logo.png" class="baidu-logo-img" alt="Baidu" />
       </td>
       <td class="exp-text-col">
-        <p><b>Baidu - Basic Model R&amp;D Dept. - Pre-training Algorithm Team</b></p>
-        <p>Research Intern, Jun. 2026 - Present</p>
-        <em>Focus: ERNIE Series Models, Pre-training Architecture &amp; Algorithm, Training Dynamics</em>
+        <p><b data-i18n="baiduTeam">Baidu - Basic Model R&amp;D Dept. - Pre-training Algorithm Team</b></p>
+        <p data-i18n="baiduRole">Research Intern, Jun. 2026 - Present</p>
+        <em data-i18n="baiduFocus">Focus: ERNIE Series Models, Pre-training Architecture &amp; Algorithm, Training Dynamics</em>
       </td>
     </tr>
     <tr>
@@ -199,9 +240,9 @@
         <img src="images/industrial/bytedance-logo.png" class="exp-logo-img" alt="tiktok" />
       </td>
       <td class="exp-text-col">
-        <p><b>ByteDance - TikTok - Content Intelligence Team</b></p>
-        <p>Research Intern, Dec. 2025 - Jun. 2026</p>
-        <em>Focus: VLM Post-training, Continuous Diffusion Language Model</em>
+        <p><b data-i18n="bytedanceTeam">ByteDance - TikTok - Content Intelligence Team</b></p>
+        <p data-i18n="bytedanceRole">Research Intern, Dec. 2025 - Jun. 2026</p>
+        <em data-i18n="bytedanceFocus">Focus: VLM Post-training, Continuous Diffusion Language Model</em>
       </td>
     </tr>
     <tr>
@@ -209,9 +250,9 @@
         <img src="images/industrial/samsung-logo.png" class="exp-logo-img" alt="samsung" />
       </td>
       <td class="exp-text-col">
-        <p><b>Samsung R&amp;D China - Advanced Research Lab</b></p>
-        <p>Research Intern, Feb. 2025 - Apr. 2025</p>
-        <em>Focus: VLM/VLA Architecture</em>
+        <p><b data-i18n="samsungTeam">Samsung R&amp;D China - Advanced Research Lab</b></p>
+        <p data-i18n="samsungRole">Research Intern, Feb. 2025 - Apr. 2025</p>
+        <em data-i18n="samsungFocus">Focus: VLM/VLA Architecture</em>
       </td>
     </tr>
     <tr>
@@ -219,9 +260,9 @@
         <img src="images/industrial/pku-logo.png" class="exp-logo-img" alt="xlab" />
       </td>
       <td class="exp-text-col">
-        <p><b>Peking University - XLab</b></p>
-        <p>Student Researcher, Sep. 2024 - Present</p>
-        <em>Focus: VLM/VLA Architecture, Token Efficiency, Agents</em>
+        <p><b data-i18n="xlabTeam">Peking University - XLab</b></p>
+        <p data-i18n="xlabRole">Student Researcher, Sep. 2024 - Present</p>
+        <em data-i18n="xlabFocus">Focus: VLM/VLA Architecture, Token Efficiency, Agents</em>
       </td>
     </tr>
   </tbody>
@@ -229,7 +270,7 @@
 
 
 
-<h2>Education</h2>
+<h2 data-i18n="educationHeading">Education</h2>
 <table id="tbPublications" class="edu-table" width="100%">
   <tbody>
     <tr>
@@ -237,9 +278,9 @@
         <img src="images/education/pku-logo.png" class="edu-logo-img" alt="pku" />
       </td>
       <td class="edu-text-col">
-        <p><b>Peking University</b></p>
-        <p>School of Advanced Manufacturing and Robotics</p>
-        <p>M.Eng., Sep. 2024 - Jun. 2027 (expected)</p>
+        <p><b data-i18n="pkuName">Peking University</b></p>
+        <p data-i18n="pkuSchool">School of Advanced Manufacturing and Robotics</p>
+        <p data-i18n="pkuDegree">M.Eng., Sep. 2024 - Jun. 2027 (expected)</p>
       </td>
     </tr>
     <tr>
@@ -247,9 +288,9 @@
         <img src="images/education/hust-logo.png" class="edu-logo-img" alt="hust" />
       </td>
       <td class="edu-text-col">
-        <p><b>Huazhong University of Science and Technology</b></p>
-        <p>School of Cyber Science and Engineering</p>
-        <p>B.Eng., Sep. 2020 - Jun. 2024</p>
+        <p><b data-i18n="hustName">Huazhong University of Science and Technology</b></p>
+        <p data-i18n="hustSchool">School of Cyber Science and Engineering</p>
+        <p data-i18n="hustDegree">B.Eng., Sep. 2020 - Jun. 2024</p>
       </td>
     </tr>
   </tbody>
@@ -257,7 +298,7 @@
 
 
 
-<h2>Selected Publications <a class="section-link" href="https://scholar.google.com/citations?user=DSWMEjAAAAAJ&amp;hl=zh-CN">[Full List]</a></h2>
+<h2><span data-i18n="publicationsHeading">Selected Publications</span> <a class="section-link" data-i18n="fullList" href="https://scholar.google.com/citations?user=DSWMEjAAAAAJ&amp;hl=zh-CN">[Full List]</a></h2>
 <table id="tbPublications" class="pub-table" width="100%">
   <tbody>
     <tr>
@@ -284,23 +325,23 @@
   </tbody>
 </table>
 
-<h2>Beyond Research</h2>
+<h2 data-i18n="beyondHeading">Beyond Research</h2>
 <table class="beyond-table" width="100%">
   <tbody>
     <tr>
       <td class="text-col">
         <ul>
           <li>
-            <p><b>Non-Negative-Sum Games.</b>
+            <p data-i18n="gamesIntro"><b>Non-Negative-Sum Games.</b>
               I am interested in non-negative-sum environments (i.e., zero-sum and positive-sum games), from financial markets to strategy games.
               In my spare time, I trade and also enjoy games such as Texas Hold'em and Mahjong.
             </p>
-            <p>
+            <p data-i18n="markets">
               My interests cover almost all tradable assets, including U.S. stocks, Hong Kong stocks, Chinese A-shares, cryptocurrencies, spot markets, futures, derivatives, options, prediction markets, and more.
               I am a firm believer in Kondratiev waves and agree with the value-investing philosophy of buying when assets are undervalued and selling when valuations are too high.
               I also recognize the value of data-driven high-frequency technical trading, such as various liquidity strategies and spread arbitrage strategies.
             </p>
-            <p>
+            <p data-i18n="tradingResearch">
               I enjoy analyzing these non-negative-sum environments and trying to find an edge through strategy and reasoning to earn real returns.
               Recently, I have also been exploring LLM applications in trading, including factor mining, automated trading systems, news-driven strategies, and the analysis of public opinion and market sentiment, among others.
             </p>
@@ -315,18 +356,18 @@
       <td colspan="2" class="text-col">
         <ul>
           <li>
-            <p><b>Current Aspiration.</b>
-              My medium- to long-term goal is to accumulate capital through earned income and trading profits, then gradually achieve FIRE through compounding.
+            <p data-i18n="aspiration"><b>Current Aspiration.</b>
+              My medium- to long-term goal is to accumulate capital through earned income and trading profits, then gradually achieve <b>FIRE (Financial Independence, Retire Early)</b> through compounding.
               Ultimately, I hope to &ldquo;buy back my time and freedom to do what I truly want to do&rdquo;.
             </p>
           </li>
           <li>
-            <p><b>Video Games.</b>
+            <p data-i18n="videoGames"><b>Video Games.</b>
               I also enjoy video games, including single-player games on platforms such as PlayStation, Nintendo Switch, and Steam, as well as cooperative multiplayer games. My favorite game is <em>The Legend of Zelda: Breath of the Wild</em>—the hundreds of hours I spent playing it are among the happiest moments of my life. For multiplayer games, I particularly enjoy <em>League of Legends</em>, which is probably the game I've spent the most time playing.
             </p>
           </li>
         </ul>
-        <p>If you happen to share similar interests, feel free to reach out.</p>
+        <p data-i18n="personalContact">If you happen to share similar interests and aspirations, feel free to reach out.</p>
       </td>
     </tr>
   </tbody>
@@ -336,10 +377,12 @@
 <div id="footer">
   <div id="footer-text"></div>
 </div>
-<p style="text-align:center; color:#666; font-size:0.95em; margin-top:8px;">Total Page Views</p>
+<!--
+<p data-i18n="pageViews" style="text-align:center; color:#666; font-size:0.95em; margin-top:8px;">Total Page Views</p>
 <p style="text-align:center; margin-top:6px;">
   <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=y8DGZzSwFxtVrWq71vNb4XfKzIcaKqfA3O21DOhs78Q&cl=ffffff&w=350"></script>
 </p>
+-->
 
 </div>
 </body>
