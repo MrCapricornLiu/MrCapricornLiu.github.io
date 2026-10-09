@@ -41,7 +41,7 @@
     aspiration: "<b>当前目标。</b> 我的中长期目标是通过工作收入和交易收益积累本金，再借助复利逐步实现财务自由。最终，我希望“买回自己的时间与自由去做自己真正想做的事情”。",
     videoGames: "<b>电子游戏。</b> 我也喜欢玩电子游戏，包括 PlayStation、Nintendo Switch 和 Steam 等平台上的单人游戏，以及多人合作游戏。我最喜欢的游戏是<em>《塞尔达传说：旷野之息》</em>，玩这款游戏的上百个小时是我人生中最快乐的时光之一。至于多人游戏，我特别喜欢<em>《英雄联盟》</em>，这可能是我玩得最久的游戏。",
     personalContact: "如果你也有类似的兴趣与追求，欢迎联系交流。",
-    pageViews: "总访问量"
+    pageViews: "总访问量："
   };
 
   const storageKey = "homepage-language";
