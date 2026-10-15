@@ -15,7 +15,7 @@
     experienceHeading: "研究与实习经历",
     baiduTeam: "百度 - 基础模型研发部 - 预训练算法组",
     baiduRole: "算法实习生，2026 年 6 月 - 至今",
-    baiduFocus: "方向：文心大模型，LLM 预训练架构与算法，训练动力学",
+    baiduFocus: "方向：文心大模型，LLM 预训练架构，训练动力学",
     bytedanceTeam: "字节跳动 - TikTok - 内容理解组",
     bytedanceRole: "算法实习生，2025 年 12 月 - 2026 年 6 月",
     bytedanceFocus: "方向：VLM 后训练，连续扩散语言模型",
