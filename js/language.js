@@ -6,7 +6,7 @@
     name: "Chenghao Liu",
     position: "北京大学在读硕士",
     email: "邮箱：",
-    updated: "最近更新：2026 年 9 月 1 日",
+    updated: "最近更新：2026 年 10 月 1 日",
     biographyHeading: "个人简介",
     biography: '我目前在北京大学攻读硕士学位，导师为<a href="https://amr.pku.edu.cn/jzyg/szdw/H/89baf74ac50448f0a475346a58f09739.htm">黄松芳研究员</a>。本科毕业于华中科技大学。',
     interests: "我的研究兴趣主要集中在：1）<b>语言模型架构与训练/推理方法</b>：面向离散 Token 语言模型与连续扩散语言模型，设计模型架构和训练/推理方法，以提升特定任务表现或通用能力；2）<b>Agent 系统</b>：面向基于 LLM 的 Agent，研究记忆、工作流与数据飞轮。",
